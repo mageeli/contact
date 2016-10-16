@@ -1,0 +1,163 @@
+  
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Blank Cordova Mobile App Project Template (Lite)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- normalizes device and document ready events, see README for details -->
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="view splitview">        
+         <header>
+            <a class="menuButton" data-left-menu="left" data-transition="cover" style="float:left"></a>
+            <center><img class="app_header" src="images/logo2.jpeg"></center>
+        </header>
+            <div class="pages">
+                            <div class="panel" id="main" data-title="Main" data-selected="true">
+           <div class="container">
+           <section class="main-section contact" id="contact">
+
+                <div class="row">
+                    <div class="col-lg-6 col-sm-7 wow fadeInLeft address">
+
+                    </div>
+                    <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+                        <div class="alert" id="main_alert"></div>
+                        <form class="form main_form">
+                            <h3>اطلب كتابك لنوصله لك:</h3>
+                            <hr>
+                            <input class="input-text" type="text" name="tname" placeholder="إسمك *" >
+                            <input class="input-text" type="number" name="tmobile" placeholder="رقم الهاتف *" >
+                            <input class="input-text" type="email" name="temail" placeholder="البريد اللإلكتروني *">
+                            <label>مدينة الاقامة *</label>
+                            <select class="input-text option_app" name="city">
+                            <option   disabled>مدينة الاقامة *</option>
+                            <option  value="الرياض">الرياض</option>
+                            </select>
+                            <label>بنك المراد التحويل منه *</label>
+                            <select class="input-text option_app" name="bank">
+                            <option  disabled>بنك المراد التحويل منه *</option>
+                            <option  value="الراجحي">الراجحي</option>
+                            <option  value="الرياض">الرياض</option>
+                            <option value='جدة'></option>
+                            </select>
+                            <table>
+                             <tr>
+                                 <td colspan="2"><label>ماهي الكتب التي تريدها؟</label></td>
+                             </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar1" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book1" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar2" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book2" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar3" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book3" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar4" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book4" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar5" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book5" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar6" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book6" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar7" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book7" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar8" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book8" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar9" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book9" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            <tr>
+                             <td><input class="input-text" type="text" name="dar10" placeholder="دار النشر ان وجد"></td>
+                             <td><input class="input-text" type="text" name="book10" placeholder="اسم الكتاب"></td>
+                            </tr>
+                            </table>
+                            <input id="send" class="input-btn" type="button" value="إرسال الرسالة">
+                        </form>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                </section>
+                </div>
+            </div>
+                <div class="panel" id="page2">
+                    <div class="container">
+                        <section class="main-section contact" id="contact">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-7 wow fadeInLeft address"> </div>
+                                    <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+                                        <div class="alert" id="alert"></div>
+                                         <h3>اتصل بنا لننجز لك</h3>
+                                         <hr>
+                                        <form class="form">
+                                            <input class="input-text" type="text" name="name" id="name" value="" placeholder="إسمك *"><br>
+                                            <input class="input-text" type="number" name="mobile" id="mobile" value="" placeholder="رقم الهاتف *" ><br>
+                                            <input class="input-text" type="email" name="email" id="email" value="" placeholder="البريد اللإلكتروني *" ><br>
+                                            <textarea class="input-text text-area" name="massege" id="massege" value="" cols="0" rows="0" placeholder="رسالتك *"></textarea><br>
+                                            <input id="go" class="input-btn" type="button" value="إرسال الرسالة">
+                                        </form>
+                                     </div>
+                            </div>
+                        </section>
+                    </div>
+            </div>
+         </div>
+        <nav id="left">
+            <div class="view active">
+                <header>
+                    <center><img src="images/small_logo32.png"></center>
+                </header>
+                <div class="pages">
+                    <div class="panel active" id="navPage1" data-title="Foobar">
+                        <ul class="list">
+                            <li><a href="#main" onclick="$.afui.clearHistory()">صفحة الطلبات</a></li>
+                            <li><a href="#bagat" onclick="$.afui.clearHistory()">باقات</a></li>
+                            <li><a href="#zajel" onclick="$.afui.clearHistory()">الزاجل</a></li>
+                            <li><a href="#page2" onclick="$.afui.clearHistory()">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="images/1234.png" width="100" height="100">
+            </div>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
+</body>
+</html>
